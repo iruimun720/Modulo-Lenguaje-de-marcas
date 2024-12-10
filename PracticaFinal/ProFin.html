@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid CF</title>
+    <link rel="icon" href="escudo.png">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <br><br>
+            <img src="escudo.png" alt="Escudo del Real Madrid" class="escudo">
+            <h1>Real Madrid Club de Fútbol</h1>
+            <h2>¡HALA MADRID!</h2>
+        </div>
+    </header>
+    <nav class="barra">
+        <ul>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#jugadores">Jugadores Legendarios</a></li>
+            <li><a href="#titulos">Títulos</a></li>
+            <li><a href="#highlights-himno">Highlights e Himno</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="historia" class="seccion">
+            <h2>Historia</h2>
+            <p>El Real Madrid, fundado el 6 de marzo de 1902, es uno de los clubes de fútbol más exitosos del mundo, reconocido por su excelencia deportiva y sus valores de trabajo en equipo. Ha sido galardonado como el "Mejor Club del Siglo XX" por la FIFA y es un referente global.<br>
+                A lo largo de su historia, el club ha conquistado múltiples Ligas de Campeones de la UEFA y La Liga, destacándose como el equipo más exitoso de Europa. Su estadio, el Santiago Bernabéu, es un ícono mundial y ha sido testigo de momentos históricos como las primeras conquistas europeas en los años 50 y la obtención de "La Undécima" en 2016.<br>
+                Con un legado lleno de jugadores legendarios, el Real Madrid sigue siendo uno de los clubes más admirados y exitosos del fútbol mundial.</p>
+            <img src="RM1905.jpg" alt="Real Madrid en 1905" class="rm">
+        </section>
+
+        <section id="jugadores" class="seccion">
+            <h2>Jugadores Legendarios</h2>
+            <div class="legendarios">
+                <div class="jugador">
+                    <img src="DiStefano.jpeg" alt="Di Stéfano">
+                    <h3>Alfredo Di Stéfano</h3>
+                    <p>Conocido como *La Saeta Rubia*, lideró el equipo en las primeras conquistas europeas.</p>
+                </div>
+                <div class="jugador">
+                    <img src="cr7.jpeg" alt="Cristiano Ronaldo">
+                    <h3>Cristiano Ronaldo</h3>
+                    <p>El máximo goleador histórico del club y ganador de 4 Champions League con el equipo.</p>
+                </div>
+                <div class="jugador">
+                    <img src="raul.jpeg" alt="Raúl González">
+                    <h3>Raúl González</h3>
+                    <p>Ícono del madridismo y símbolo de los valores del club.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="titulos" class="seccion">
+            <h2>Palmarés del Club</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Competición</th>
+                        <th>Número de Títulos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Champions League</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>La Liga</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Copa del Rey</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Supercopa de Europa</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="highlights-himno" class="seccion">
+            <h2>Highlights e Himno</h2>
+            <div class="audiovisual">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/d5nKmWRsUH0?si=4rIBr20y0GIYwMtU" title="Real Madrid Highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="himno">   
+                    <img id="estadio" src="estadio.jpg">
+                    <audio id="audio" controls>
+                        <source src="himno-real-madrid.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion">
+            <h2>Contacto</h2>
+            <div class="todo">
+                <form class="formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br><br>
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                    <br><br>
+                    <label>¿Eres socio?</label>
+                    <input type="radio" id="socio-si" name="socio" value="si">
+                    <label for="socio-si">Sí</label>
+                    <input type="radio" id="socio-no" name="socio" value="no">
+                    <label for="socio-no">No</label>
+                    <br><br>
+                    <label for="comentarios">Comentarios:</label><br>
+                    <textarea id="comentarios" name="comentarios"></textarea>
+                    <br><br>
+                    <button type="submit">Enviar</button>
+                </form> 
+                <div class="ubicacion">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9827604636925!2d-3.6883336845854534!3d40.45305407936088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422628aa89fc83%3A0x73383b885bda9d6a!2sEstadio%20Santiago%20Bernab%C3%A9u!5e0!3m2!1ses!2ses!4v1695836423577!5m2!1ses!2ses" width="75%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div><br>
+        </section>
+    </main>
+    <footer>
+        <p>Soy un chico llamado Ismael Ruiz Muñoz que estudia un grado superior de diseño de aplicaciones web en el instituto Alan Turing. Tengo 18 años y vengo de un pueblo de Málaga llamado Vélez-Málaga, aunque actualmente resido en Málaga. Me gusta el futbol y salir con los amigos.</p>
+        <p>&copy; 2024 Real Madrid Club de Fútbol.</p>
+    </footer>
+</body>
+</html>
