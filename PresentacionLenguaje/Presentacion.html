@@ -14,7 +14,7 @@
             <h1 id="nombre">Ismael Ruiz Muñoz</h1>
             <button id ="uno" class="boton">Cambiar nombre</button>
             <br>
-            <button id ="reset" class="boton">Resetear</button>
+            <button id ="oculto" class="boton">Ocultar</button>
             <p>Estudiante</p>
         </div>
         
@@ -31,6 +31,22 @@
                 <li><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">LinkedIn</a></li>
             </ul>
             <button id ="b" class="boton">Contacto</button>            
+        </div>
+
+        <button class="showFormButton"  id="showFormButton">Contact me</button>
+        <br><br>
+        <div id="contactForm" class="contact-form">
+            <label>Nombre Completo</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label>Teléfono</label>
+            <input type="number" id="telefono" name="telefono">
+            <br><br>
+            <label>Email</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+            <label>Mensaje</label>
+            <textarea name="mensaje" id="mensaje"></textarea>
         </div>
     </div>
 
@@ -71,7 +87,7 @@
         
         const nameColorButton = document.getElementById('uno');
 
-    nameColorButton.addEventListener('click', () => {
+    /*nameColorButton.addEventListener('click', () => {
     // Change the color of the name when the image is clicked
     const titleName = document.getElementById('nombre');
     const colorName = titleName.style.color;
@@ -81,8 +97,48 @@
     } else {
         titleName.style.color = '';
     }
-});
+});*/
+/*
+    nameColorButton.addEventListener('click', () => {
+    // Change the color of the name when the image is clicked
+    const titleName = document.getElementById('nombre');
+    const colorName = titleName.style.color;
+    debugger;
+    if (titleName.textContent == 'Ismael Ruiz Muñoz') {
+        titleName.textContent = '1ºDAW';
+    } else {
+        titleName.textContent = 'Ismael Ruiz Muñoz';
+    }
+});*/
+    
+   /* const ocultNameButton = document.getElementById('oculto')
 
+    ocultNameButton.addEventListener('click', () => {
+    // Change the color of the name when the image is clicked
+    const titleName = document.getElementById('nombre');
+    const colorName = titleName.style.color;
+    debugger;
+    if (titleName.style.display == 'block') {
+        titleName.style.display = 'none';
+ 
+    } else {
+        titleName.style.display = 'block';*/
+    
+        const ocultNameButton = document.getElementById('showFormButton')
+
+    ocultNameButton.addEventListener('click', () => {
+    // Change the color of the name when the image is clicked
+    const titleName = document.getElementById('contactForm');
+    const colorName = titleName.style.color;
+    debugger;
+    if (titleName.style.display == 'none') {
+        titleName.style.display = 'block';
+ 
+    } else {
+        titleName.style.display = 'none';
+
+    }
+});
     </script>
 </body>
 
