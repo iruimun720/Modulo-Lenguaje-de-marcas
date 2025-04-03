@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Presentacion.css">
+    <meta charset="utf-8" />
+    <title>Presentación</title>
+</head>
+
+<body>
+    <div class="todo">
+        <div class="uno">
+            <img src="businessman-explain-pose-character-design-free-vector.jpg" class="foto" id="perfil">
+            <h1 id="nombre">Ismael Ruiz Muñoz</h1>
+            <button id ="uno" class="boton">Cambiar nombre</button>
+            <br>
+            <button id ="reset" class="boton">Resetear</button>
+            <p>Estudiante</p>
+        </div>
+        
+        <div class="dos">
+            <h3>Hobbies</h3>
+            <ul>
+                <li>Fútbol</li>
+                <li>Pasar tiempo con la familia</li>
+                <li>Salir con los amigos</li>
+            </ul>
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a href="https://github.com/iruimun720/githubpages" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">LinkedIn</a></li>
+            </ul>
+            <button id ="b" class="boton">Contacto</button>            
+        </div>
+    </div>
+
+    <script>
+       /* const perfil = document.getElementById('perfil');
+
+        perfil.addEventListener('mouseover', () => {
+            perfil.style.boxShadow = '0 0px 1000px rgba(246, 20, 20, 0.5)';
+            perfil = "images/profile.webp";
+        });
+
+        perfil.addEventListener('mouseout', () => {
+            perfil.style.boxShadow = 'none';
+            perfil.src = "bicho.jpg";
+        });
+
+
+        const nameColorBoton = document.getElementById('b')
+
+        nameColorBoton.addEventListener('click', () => {
+            nameColorBoton.style.color = 'red'
+
+            
+        });*/
+
+
+        var changeNameColorButton = document.getElementById('uno')
+       
+        var unoH1 = document.getElementById('nombre')
+
+        changeNameColorButton.addEventListener('click', function(){
+
+            console.warn("click  -----------");
+            alert("alertaaa")
+            unoH1.style = "color: green; font-style: italic;";
+            
+        })
+        
+        changeColorButton.addEventListener('click', function(){
+
+
+        })
+
+    </script>
+</body>
+
+</html>
