@@ -57,7 +57,7 @@
         });*/
 
 
-        var changeNameColorButton = document.getElementById('uno')
+        /*var changeNameColorButton = document.getElementById('uno')
        
         var unoH1 = document.getElementById('nombre')
 
@@ -67,12 +67,21 @@
             alert("alertaaa")
             unoH1.style = "color: green; font-style: italic;";
             
-        })
+        })*/
         
-        changeColorButton.addEventListener('click', function(){
+        const nameColorButton = document.getElementById('uno');
 
-
-        })
+    nameColorButton.addEventListener('click', () => {
+    // Change the color of the name when the image is clicked
+    const titleName = document.getElementById('nombre');
+    const colorName = titleName.style.color;
+    debugger;
+    if (titleName.style.color == '') {
+        titleName.style.color = 'blue';
+    } else {
+        titleName.style.color = '';
+    }
+});
 
     </script>
 </body>
