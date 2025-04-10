@@ -27,18 +27,67 @@
     <span id="errorConfirmPassword"></span>
 
     <button type="submit">Registrarse</button>
-    <p>Nombre</p>
-    <p>Email</p>
-    <p>Contraseña</p>
-    <p>Confirmar Contraseña:</p>
+    <p id="nombreP"></p>
+    <p id="emailP"></p>
+    <p id="passwordP"></p>
+    <p id="confirmPasswordP"></p>
   </form>
 
   <script>
-    //TODO: When the button Registrarse is clicked, it should display all the input value in their respective <p> tag
-    // Add also a validation for the form, if the name is empty, show an error message in the <span> tag with id="errorNombre"
-    // If the email is empty, show an error message in the <span> tag with id="errorEmail"
-    // If the password is empty, show an error message in the <span> tag with id="errorPassword"
-    // If the password and confirm password are not the same, show an error message in the <span> tag with id="errorConfirmPassword"
+
+    const form = document.getElementById("registroForm");
+    const nombreInput = document.getElementById("nombre");
+    const emailInput = document.getElementById("email");
+    const passwordInput = document.getElementById("password");
+    const confirmPasswordInput = document.getElementById("confirmPassword");
+
+    const nombreP = document.getElementById("nombreP");
+    const emailP = document.getElementById("emailP");
+    const passwordP = document.getElementById("passwordP");
+    const confirmPasswordP = document.getElementById("confirmPasswordP");
+
+    const errorNombre = document.getElementById("errorNombre");
+    const errorEmail = document.getElementById("errorEmail");
+    const errorPassword = document.getElementById("errorPassword");
+    const errorConfirmPassword = document.getElementById("errorConfirmPassword");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();  
+
+      errorNombre.textContent = "";
+      errorEmail.textContent = "";
+      errorPassword.textContent = "";
+      errorConfirmPassword.textContent = "";
+
+      let valid = true;
+
+      if (nombreInput.value === "") {
+        errorNombre.textContent = "El nombre no puede estar vacío.";
+        valid = false;
+      }
+
+      if (emailInput.value === "") {
+        errorEmail.textContent = "El email no puede estar vacío.";
+        valid = false;
+      }
+
+      if (passwordInput.value === "") {
+        errorPassword.textContent = "La contraseña no puede estar vacía.";
+        valid = false;
+      }
+
+      if (confirmPasswordInput.value !== passwordInput.value) {
+        errorConfirmPassword.textContent = "Las contraseñas no coinciden.";
+        valid = false;
+      }
+
+      if (valid) {
+        nombreP.textContent = "Nombre: " + nombreInput.value;
+        emailP.textContent = "Email: " + emailInput.value;
+        passwordP.textContent = "Contraseña: " + passwordInput.value;
+        confirmPasswordP.textContent = "Confirmar Contraseña: " + confirmPasswordInput.value;
+      }
+    });
   </script>
 </body>
 

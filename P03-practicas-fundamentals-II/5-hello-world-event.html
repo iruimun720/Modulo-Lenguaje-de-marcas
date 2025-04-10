@@ -13,7 +13,13 @@
   <p id="mensaje"></p>
   <script>
     //TODO: create a function mostrarMensaje that shows an alert with "Hola Mundo" and also adds the same message to the <p> tag with id="mensaje"
-  </script>
+    
+      function mostrarMensaje() {
+        alert("Hola Mundo");
+        document.getElementById("mensaje").textContent = "Hola Mundo";
+      }
+
+</script>
 </body>
 
 </html>

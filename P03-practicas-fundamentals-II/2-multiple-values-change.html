@@ -6,6 +6,7 @@
 <script>
   const button = document.getElementById("changeAllButton");
   const paragraphs = document.getElementsByClassName("changeable");
+  
 
   button.addEventListener("click", function () {
     for (let i = 0; i < paragraphs.length; i++) {
@@ -14,6 +15,12 @@
   });
 
   //TODO: Display the changed text in an unordered list <ul>
-
+  
+    const ul = document.getElementById("changedList");
+    const li = document.createElement("li");
+      
+      li.textContent = "Changed!"; 
+      ul.appendChild(li); 
+  
 
 </script>
