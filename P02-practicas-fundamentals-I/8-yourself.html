@@ -28,13 +28,13 @@
 <body>
 
   <h1>First Javascript contact</h1>
-  <p>This is the initial text.</p>
+  <p id="text">This is the initial text.</p>
 
-  <button>Hello World</button>
-  <button>Goodbye World</button>
-  <button>Bold</button>
-  <button>Italic</button>
-  <button>Change Color</button>
+  <button id="helloButton">Hello World</button>
+  <button id="goodbyeButton">Goodbye World</button>
+  <button id="boldButton">Bold</button>
+  <button id="italicButton">Italic</button>
+  <button id="colorButton">Change Color</button>
 
   <script>
       // A button that, when clicked, changes the text of the paragraph <p> to "Hello World".
@@ -42,6 +42,48 @@
       // A button that, when clicked, change the text style to bold.
       // A button that, when clicked, change the text style to italic.
       // A button that, when clicked, change the color of the text to red, when it is clicked again set the color back to the initial color.
+    
+    const textElement = document.getElementById("text");
+    const helloButton = document.getElementById("helloButton");
+    const goodbyeButton = document.getElementById("goodbyeButton");
+    const boldButton = document.getElementById("boldButton");
+    const italicButton = document.getElementById("italicButton");
+    const colorButton = document.getElementById("colorButton");
+
+    let isColorChanged = false;
+
+    helloButton.addEventListener("click", () => {
+      textElement.textContent = "Hello World";
+    });
+
+    goodbyeButton.addEventListener("click", () => {
+      textElement.textContent = "Goodbye World";
+    });
+
+    boldButton.addEventListener("click", () => {
+      if (textElement.style.fontWeight === "bold") {
+        textElement.style.fontWeight = "normal";
+      } else {
+        textElement.style.fontWeight = "bold";
+      }
+    });
+
+    italicButton.addEventListener("click", () => {
+      if (textElement.style.fontStyle === "italic") {
+        textElement.style.fontStyle = "normal";
+      } else {
+        textElement.style.fontStyle = "italic";
+      }
+    });
+
+    colorButton.addEventListener("click", () => {
+      if (isColorChanged) {
+        textElement.style.color = ""; // Reset to initial color
+      } else {
+        textElement.style.color = "red"; // Set color to red
+      }
+      isColorChanged = !isColorChanged; // Toggle the state
+    });
 
   </script>
 
