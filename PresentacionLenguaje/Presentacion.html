@@ -20,10 +20,8 @@
         
         <div class="dos">
             <h3>Hobbies</h3>
-            <ul>
-                <li>Fútbol</li>
-                <li>Pasar tiempo con la familia</li>
-                <li>Salir con los amigos</li>
+            <ul id="order_list">
+                
             </ul>
             <h3>Enlaces</h3>
             <ul>
@@ -139,6 +137,15 @@
 
     }
 });
+
+    let fps = ['Fútbol', 'Pasar tiempo con la familia', 'Salir con los amigos']
+
+    let order_ListEl = document.getElementById("order_list");
+    for(var i = 0; i<fps.length; i++){
+        let li = document.createElement("li");
+        li.innerText = fps[i];
+        order_ListEl.appendChild(li);
+    }
     </script>
 </body>
 
