@@ -1,0 +1,91 @@
+{
+  "city": {
+    "name": "Málaga",
+    "population": 578460,
+    "location": "https://goo.gl/maps/6TnTqS8ZsbmA7ZrbA",
+    "description": "A historic port city in southern Spain known for its beaches, art museums, and vibrant culture.",
+    "weather": "Mediterranean climate with hot summers and mild winters",
+    "bars_and_restaurants": [
+      {
+        "name": "El Pimpi",
+        "price_range": "Moderate",
+        "accessibility": "Reduced Mobility Adaptation",
+        "address": "Calle Granada, 62, 29015 Málaga, Spain",
+        "type": "Tapas Bar",
+        "recommended": true,
+        "location": "https://goo.gl/maps/YRQDzTCAa5H2"
+      },
+      {
+        "name": "La Tranca",
+        "price_range": "Economical",
+        "accessibility": "Partial accessibility",
+        "address": "Calle Carretería, 92, 29008 Málaga, Spain",
+        "type": "Spanish Tavern",
+        "recommended": true,
+        "location": "https://goo.gl/maps/6KP8Y3QaWzv"
+      },
+      {
+        "name": "Casa Lola",
+        "price_range": "Moderate",
+        "accessibility": "Reduced Mobility Adaptation",
+        "address": "Calle Strachan, 11, 29015 Málaga, Spain",
+        "type": "Tapas Restaurant",
+        "recommended": true,
+        "location": "https://goo.gl/maps/K5GUc8V8kYB2"
+      },
+      {
+        "name": "Restaurante Vino Mío",
+        "price_range": "Expensive",
+        "accessibility": "Fully accessible",
+        "address": "Plaza Jerónimo Cuervo, 2, 29012 Málaga, Spain",
+        "type": "International Cuisine",
+        "recommended": false,
+        "location": "https://goo.gl/maps/Ncp5pQYtZwo"
+      },
+      {
+        "name": "La Deriva",
+        "price_range": "Moderate",
+        "accessibility": "Reduced Mobility Adaptation",
+        "address": "Alameda Colón, 7, 29001 Málaga, Spain",
+        "type": "Contemporary Mediterranean",
+        "recommended": true,
+        "location": "https://goo.gl/maps/HdMEczHvBkv"
+      }
+    ],
+    "activities": [
+      {
+        "name": "Alcazaba of Málaga",
+        "accessibility": "Partially accessible",
+        "address": "Calle Alcazabilla, 2, 29012 Málaga, Spain",
+        "type": "Historic Site",
+        "recommended": true,
+        "location": "https://goo.gl/maps/W6HxFgHaPVT2",
+        "price": "€3.50 per person",
+        "suitable_for": "All ages",
+        "duration": "1.5 hours"
+      },
+      {
+        "name": "Automobile and Fashion Museum",
+        "accessibility": "Fully accessible",
+        "address": "Av de Sor Teresa Prat, 15, 29003 Málaga, Spain",
+        "type": "Museum",
+        "recommended": true,
+        "location": "https://goo.gl/maps/B1BrStetXLB2",
+        "price": "€9.50 per person",
+        "suitable_for": "All ages",
+        "duration": "2–3 hours"
+      },
+      {
+        "name": "Muelle Uno",
+        "accessibility": "Fully accessible",
+        "address": "Muelle Uno, Puerto de Málaga, 29001 Málaga, Spain",
+        "type": "Shopping and Leisure Area",
+        "recommended": true,
+        "location": "https://goo.gl/maps/HWfkyYPjEm92",
+        "price": "Free to visit",
+        "suitable_for": "All ages",
+        "duration": "Half day"
+      }
+    ]
+  }
+}
