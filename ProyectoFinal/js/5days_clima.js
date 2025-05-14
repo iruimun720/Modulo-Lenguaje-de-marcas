@@ -1,7 +1,12 @@
-var clima = require('./5days_clima.json');
+var clima = {};
+fetch('./js/current_clima.json')
+    .then((response) => response.json())
+    .then((json) => fillContent(json));
 
-var days = clima.forecast.forecastday;
-
-days.forEach(function(item) {
-
-})
+function fillContent(clima){
+    var hours = clima.forecast.forecastday.hour;
+    
+    hours.forEach(function(item) {
+    
+    })
+}
