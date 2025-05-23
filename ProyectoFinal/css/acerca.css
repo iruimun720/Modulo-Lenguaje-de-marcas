@@ -1,11 +1,11 @@
-/* Fondo general */
+/* Fondo  */
 body {
     background: linear-gradient(135deg, #e3f2fd, #ffffff);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 40px 0;
   }
   
-  /* Contenedor principal */
+  /* Contenedor */
   .container {
     max-width: 800px;
     background-color: #ffffff;
@@ -55,7 +55,7 @@ body {
     line-height: 1.6;
   }
   
-  /* Lista de objetivos */
+  /* objetivos */
   ul {
     padding-left: 1.2rem;
   }
